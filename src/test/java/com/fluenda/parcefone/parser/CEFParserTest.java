@@ -134,7 +134,8 @@ public class CEFParserTest {
 
     @Test
     public void validMessageWithEmptyExtensions() throws Exception {
-        String sample1 = "CEF:0|FireEye|CMS|7.2.1.244420|DM|domain-match|1|rt= cn3Label= cn3= cn2Label= cn2= shost= proto= cs5Label= cs5= dvchost= spt= dvc= smac= cn1Label= cn1= externalId= cs4Label= cs4= dmac= cs1Label= cs1=";
+        String sample1 = "CEF:0|FireEye|CMS|7.2.1.244420|DM|domain-match|1|rt= cn3Label= cn3= cn2Label= cn2= shost= proto= cs5Label= "
+                + "cs5= dvchost= spt= dvc= smac= cn1Label= cn1= externalId= cs4Label= cs4= dmac= cs1Label= cs1=";
         CEFParser parser = new CEFParser();
 
         // validation should be disabled if we allow for null values
